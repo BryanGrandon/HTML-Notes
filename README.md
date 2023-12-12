@@ -5,6 +5,7 @@ HTML stands for HyperText Markup Language. It is used on the frontend and gives 
 - [Introduction](#introduction)
 - [Basic Structure](#basic-structure)
 - [Metadata](#metadata)
+- [Grouping Labels](#grouping-labels)
 
 ## _Introduction_
 
@@ -71,4 +72,46 @@ These meta elements will be found in the **head** of the web code.
     <link rel="stylesheet" href="style.css" />
     <!-- Style of a CSS document -->
   </head>
+```
+
+## _Grouping Labels_
+
+[Grouping labels](/code/grouping-labels.html) are labels used to group and associate related information.
+
+```HTML
+<div></div>
+<!-- Layer or division used to group several HTML tags. -->
+
+<p>Define a text paragraph</p>
+
+<main></main>
+<!-- Container to enclose the main part of the page. -->
+
+<hr />
+<!-- Indicates a thematic separation of the text. -->
+
+<ol></ol>
+<!-- Creates a numbered list (with order). -->
+
+<ul></ul>
+<!-- Create a list where the order does not matter. -->
+
+<li>Contains one of the items from a numbered or unnumbered list.</li>
+
+<pre>Sets a preformatted text.</pre>
+
+<blockquote></blockquote>
+<!-- Groups information and characteristics of a appointment. -->
+
+<dl></dl>
+<!-- Create a list of definitions. -->
+
+<dt>Sets the term of a definition.</dt>
+
+<dd>Sets the description of a term of a definition.</dd>
+
+<figure></figure>
+<!-- Groups a visual element in a figure or illustration. -->
+
+<figcaption>Sets a caption to a figure or illustration.</figcaption>
 ```
