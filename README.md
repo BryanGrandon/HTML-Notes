@@ -235,3 +235,35 @@ A form is known as a mechanism for sending information by the user, through visu
   <img src="" alt="" />
 </details>
 ```
+
+## _[Semantic](/code/semantic.html)_
+
+We prepare our HTML document so that any browser, search engine robot, application or computer system will be able to read the HTML document and know perfectly the nature of the content of that section.
+
+```HTML
+<h1>Header level 1</h1>
+
+<h2>Header level 2</h2>
+
+<h3>Header level 3</h3>
+
+<h4>Header level 4</h4>
+
+<h5>Header level 5</h5>
+
+<h6>Header level 6</h6>
+
+<header>header tag -> Header on a wed site or a section</header>
+
+<nav>nav tag -> Represents a navigation</nav>
+
+<section>section tag -> Represents a section of generic content</section>
+
+<article>article tag -> Self explanatory section</article>
+
+<footer>footer tag -> footer of a website or a section</footer>
+
+<aside>aside tag -> represents supplemental or secondary content</aside>
+
+<address>address tag -> represents a contact information</address>
+```
