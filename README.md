@@ -137,8 +137,22 @@ The main thing is to understand that it is not done for mere visual intention, b
 
   <span>26<sub>Subindex</sub></span>
 
-  <cite>Author Name, work, book, etc</cite>
+  <cite>Author Name, work, book, etc.</cite>
 
-  <code>Code fragment</code>
+  <code>Code fragment.</code>
 </pre>
+```
+
+## [Multimedia](/code/multimedia.html)
+
+Display multimedia content on the website
+
+```HTML
+<img src="" alt="" />
+
+<!-- Display video file on our website. -->
+<video src="" controls></video>
+
+<!-- Display audio file on our website. -->
+<audio src="" controls></audio>
 ```
