@@ -206,3 +206,32 @@ A form is known as a mechanism for sending information by the user, through visu
   <input type="submit" value="Submit" />
 </form>
 ```
+
+## Interactive
+
+```HTML
+<!-- Create dialog -->
+<dialog id="dialog-window">
+  <p>Hi, I am a message</p>
+  <img
+    src="https://cdn.pixabay.com/photo/2013/08/11/19/46/coffee-171653_960_720.jpg"
+    alt="Coffee"
+    width="300"
+  />
+  <!-- Use JavaScript, for replace onclick="" -->
+  <button id="close" onclick="document.getElementById('dialog-window').close()">
+    Close
+  </button>
+</dialog>
+<!-- Use JavaScript, for replace onclick="" -->
+<button id="show" onclick="document.getElementById('dialog-window').show()">
+  Show
+</button>
+
+<!-- Create Dropdown -->
+<details>
+  <summary>Dropdown Title</summary>
+  <p>More Info</p>
+  <img src="" alt="" />
+</details>
+```
