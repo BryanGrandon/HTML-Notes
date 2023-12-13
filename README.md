@@ -6,6 +6,7 @@ HTML stands for HyperText Markup Language. It is used on the frontend and gives 
 - [Basic Structure](#basic-structure)
 - [Metadata](#metadata)
 - [Grouping Labels](#grouping-labels)
+- [Text Labels](#text-labels)
 
 ## _Introduction_
 
@@ -13,9 +14,9 @@ This project is to have a record of what i have learned about HTML.
 
 **Extensions to use:** [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-## _Basic Structure_
+## _[Basic Structure](/code/basic-structure.html)_
 
-The [Basic Structure](/code/basic-structure.html) of a web page consists of `<html>`, `<head>` and `<body>` tags.
+The Basic Structure of a web page consists of `<html>`, `<head>` and `<body>` tags.
 
 ```HTML
 <!DOCTYPE html>
@@ -34,9 +35,9 @@ The [Basic Structure](/code/basic-structure.html) of a web page consists of `<ht
 </html>
 ```
 
-## _Metadata_
+## _[Metadata](/code/metadata.html)_
 
-[Metadata](/code/metadata.html) are HTML elements that are used by search engines to define the main information of our web site, since meta data shows information about the web page that contains them.
+Metadata are HTML elements that are used by search engines to define the main information of our web site, since meta data shows information about the web page that contains them.
 <br />
 These meta elements will be found in the **head** of the web code.
 
@@ -74,9 +75,9 @@ These meta elements will be found in the **head** of the web code.
   </head>
 ```
 
-## _Grouping Labels_
+## _[Grouping Labels](/code/grouping-labels.html)_
 
-[Grouping labels](/code/grouping-labels.html) are labels used to group and associate related information.
+Grouping labels are labels used to group and associate related information.
 
 ```HTML
 <div></div>
@@ -114,4 +115,30 @@ These meta elements will be found in the **head** of the web code.
 <!-- Groups a visual element in a figure or illustration. -->
 
 <figcaption>Sets a caption to a figure or illustration.</figcaption>
+```
+
+## _[Text Labels](/code/text-labes.html)_
+
+The main thing is to understand that it is not done for mere visual intention, but because it is intended to give it a semantic meaning.
+
+```HTML
+<pre>
+  <a href="" target="">Create a link.</a>
+
+  <strong>Important text.</strong>
+
+  <em>Emphasized text.</em>
+
+  <mark>Marked text.</mark>
+
+  <span>Text excerpt.</span>
+
+  <span>24<sup>Superscript</sup></span>
+
+  <span>26<sub>Subindex</sub></span>
+
+  <cite>Author Name, work, book, etc</cite>
+
+  <code>Code fragment</code>
+</pre>
 ```
