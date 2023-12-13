@@ -122,7 +122,7 @@ Grouping labels are labels used to group and associate related information.
 <figcaption>Sets a caption to a figure or illustration.</figcaption>
 ```
 
-## _[Text Labels](/code/text-labes.html)_
+## _[Text Labels](/code/text-labels.html)_
 
 The main thing is to understand that it is not done for mere visual intention, but because it is intended to give it a semantic meaning.
 
