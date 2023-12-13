@@ -7,6 +7,11 @@ HTML stands for HyperText Markup Language. It is used on the frontend and gives 
 - [Metadata](#metadata)
 - [Grouping Labels](#grouping-labels)
 - [Text Labels](#text-labels)
+- [Multimedia](#multimedia)
+- [Table Label](#table-label)
+- [From Label](#form-label)
+- [Interactive](#interactive)
+- [Semantic](#semantic)
 
 ## _Introduction_
 
@@ -157,7 +162,7 @@ Display multimedia content on the website
 <audio src="" controls></audio>
 ```
 
-## _[Table](/code/table.html)_
+## _[Table label](/code/table.html)_
 
 Tables have been included in HTML since its earliest versions and are a fantastic way to display data clearly.
 
@@ -207,7 +212,7 @@ A form is known as a mechanism for sending information by the user, through visu
 </form>
 ```
 
-## Interactive
+## _[Interactive](/code/interactive.html)_
 
 ```HTML
 <!-- Create dialog -->
