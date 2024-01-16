@@ -2,6 +2,8 @@
 
 HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.
 
+## _Table of content_
+
 - [Introduction](#introduction)
 - [Basic Structure](#basic-structure)
 - [Metadata](#metadata)
@@ -17,7 +19,9 @@ HTML stands for HyperText Markup Language. It is used on the frontend and gives 
 
 This project is to have a record of what i have learned about HTML.
 
-**Extensions to use:** [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+Extensions to use:
+
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## _[Basic Structure](/code/basic-structure.html)_
 
