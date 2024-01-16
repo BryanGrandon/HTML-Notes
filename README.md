@@ -19,7 +19,7 @@ HTML stands for HyperText Markup Language. It is used on the frontend and gives 
 
 This project is to have a record of what i have learned about HTML.
 
-Extensions to use:
+### Extensions to use:
 
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
