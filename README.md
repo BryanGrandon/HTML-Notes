@@ -2,171 +2,210 @@
 
 HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.
 
-## _Table of content_
+## Table of content
 
-- [Introduction](#introduction)
-- [Basic Structure](#basic-structure)
-- [Metadata](#metadata)
-- [Grouping Labels](#grouping-labels)
-- [Text Labels](#text-labels)
-- [Multimedia](#multimedia)
-- [Table Label](#table-label)
-- [From Label](#form-label)
-- [Interactive](#interactive)
-- [Semantic](#semantic)
+- [HTML document structure](#html-document-structure)
+- [Header labels](#header-labels)
+  - [Title](#title)
+  - [Metadata](#metadata)
+  - [Link](#link)
+- [Grouping labels](#grouping-labels)
+- [Multimedia labels](#multimedia-labels)
+  - [Image](#image)
+  - [Video](#video)
+  - [Audio](#audio)
+- [Text labels](#text-labels)
+- [Semantic](#semantic-labels)
+- [Table label](#table-label)
+- [Form label](#form-label)
+- [Form validations](#form-validations)
+- [Scripting label](#scripting-label)
+- [Interactive labels](#interactive-labels)
+  - [Details](#details)
+  - [Dialog](#dialog)
 
-## _Introduction_
-
-This project is to have a record of what i have learned about HTML.
-
-### Extensions to use:
-
-- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-
-## _[Basic Structure](/code/basic-structure.html)_
-
-The Basic Structure of a web page consists of `<html>`, `<head>` and `<body>` tags.
+## HTML document structure
 
 ```HTML
 <!DOCTYPE html>
-<!-- Tells the browser that the document is in HTML5 -->
+<!-- Tells the browser that the document is in HTML5  -->
 <html lang="en">
   <!-- Represents the root of an HTML document -->
   <head>
-    <!-- For information about the document -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- For information about the document -->
     <title>Web site title</title>
+    <!-- For set the title of the website  -->
   </head>
   <body>
-    <!-- For content -->
+  <!-- To set the content that the user will see  -->
   </body>
 </html>
 ```
 
-## _[Metadata](/code/metadata.html)_
+[⬆️ Back to top ⬆️](#html-notes)
 
-Metadata are HTML elements that are used by search engines to define the main information of our web site, since meta data shows information about the web page that contains them.
-<br />
-These meta elements will be found in the **head** of the web code.
+## Header labels
+
+The **head** tag is responsible for containing HTML metadata tags (information about the document), as well as for establishing relationships with other documents.
+
+### Title
+
+The title tag is used to indicate the title of our document. It is a mandatory tag that must appear in an HTML document.
+
+- It will determine the title of the browser window or tab.
+
+- If the page is indexed in Google, it is very likely to use that title for the search engine result.
+
+- It is an identifying title that can be used by bots or automatic systems that read the page.
+
+### [Metadata](/code/metadata.html)
+
+Metadata are HTML elements that are placed in the header to establish the information of our web page. This allows search engines to show the user our website if the search is related to our website.
 
 ```HTML
 <head>
-    <meta charset="UTF-8" />
-    <!-- Character encoding System -->
+  <meta charset="UTF-8" />
+  <!-- Character encoding System -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Responsive design for wed page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Responsive design for wed page -->
 
-    <meta name="description" content="The main function of the website" />
-    <!-- Website description for each HTML document -->
-
-    <meta name="keywords" content="html" />
-    <!-- List of keywords separated by commas -->
-
-    <meta name="author" content="Bryan" />
-    <!-- Indicates the name of the author of the page. -->
-
-    <meta name="application-name" content="Dev" />
-    <!-- name of the web application. if it is a webapp. -->
-
-    <meta name="generator" content="VSCode" />
-    <!-- Indicates the software used to create the web page. -->
-
-    <meta name="theme-color" content="#1e7bbf" />
-    <!-- Hexadecimal color of the navigation bar. -->
-
-    <link rel="icon" href="image.png" />
-    <!-- Tab Website icon (img, links) -->
-
-    <link rel="stylesheet" href="style.css" />
-    <!-- Style of a CSS document -->
-  </head>
+  <script src="javascript.js" defer></script>
+  <!-- Functionality of the website of a JS document -->
+</head>
 ```
 
-## _[Grouping Labels](/code/grouping-labels.html)_
+### Link
 
-Grouping labels are labels used to group and associate related information.
+The link tag is used to establish relationships with other documents, links or files.
 
 ```HTML
-<div></div>
-<!-- Layer or division used to group several HTML tags. -->
+<head>
+  <link rel="icon" href="image.png" />
+  <!-- Tab Website icon (img, links) -->
 
-<p>Define a text paragraph</p>
-
-<main></main>
-<!-- Container to enclose the main part of the page. -->
-
-<hr />
-<!-- Indicates a thematic separation of the text. -->
-
-<ol></ol>
-<!-- Creates a numbered list (with order). -->
-
-<ul></ul>
-<!-- Create a list where the order does not matter. -->
-
-<li>Contains one of the items from a numbered or unnumbered list.</li>
-
-<pre>Sets a preformatted text.</pre>
-
-<blockquote></blockquote>
-<!-- Groups information and characteristics of a appointment. -->
-
-<dl></dl>
-<!-- Create a list of definitions. -->
-
-<dt>Sets the term of a definition.</dt>
-
-<dd>Sets the description of a term of a definition.</dd>
-
-<figure></figure>
-<!-- Groups a visual element in a figure or illustration. -->
-
-<figcaption>Sets a caption to a figure or illustration.</figcaption>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Style of a CSS document -->
+</head>
 ```
 
-## _[Text Labels](/code/text-labels.html)_
+[⬆️ Back to top ⬆️](#html-notes)
 
-The main thing is to understand that it is not done for mere visual intention, but because it is intended to give it a semantic meaning.
+## [Grouping labels](/code/grouping-labels.html)
 
-```HTML
-<pre>
-  <a href="" target="">Create a link.</a>
+Grouping tags can be divided into two main groups:
 
-  <strong>Important text.</strong>
+- Tags that contain text fragments (give meaning or context to those fragments).
 
-  <em>Emphasized text.</em>
+- Tags that group other tags (they contain and group various information).
 
-  <mark>Marked text.</mark>
+| Label          | Description                                              |
+| -------------- | -------------------------------------------------------- |
+| `<p>`          | Define a text paragraph.                                 |
+| `<main>`       | Container to enclose the main part of the page.          |
+| `<div>`        | Layer or division used to group several HTML tags.       |
+| `<hr>`         | Indicates a thematic separation of the text.             |
+| `<ol>`         | Creates a order list.                                    |
+| `<ul>`         | Create an unordered list.                                |
+| `<li>`         | Item from a order or unordered list.                     |
+| `<pre>`        | Sets a preformatted text.                                |
+| `<blockquote>` | Groups information and characteristics of a appointment. |
+| `<dl>`         | Create a list of definitions.                            |
+| `<dt>`         | Sets the term of a definition.                           |
+| `<dd>`         | Sets the description of a term of a definition.          |
+| `<figure>`     | Groups a visual element in a figure or illustration.     |
+| `<figcaption>` | Sets a caption to a figure or illustration.              |
 
-  <span>Text excerpt.</span>
+[⬆️ Back to top ⬆️](#html-notes)
 
-  <span>24<sup>Superscript</sup></span>
-
-  <span>26<sub>Subindex</sub></span>
-
-  <cite>Author Name, work, book, etc.</cite>
-
-  <code>Code fragment.</code>
-</pre>
-```
-
-## _[Multimedia](/code/multimedia.html)_
+## Multimedia labels
 
 Display multimedia content on the website
 
+### Image
+
+Images are very important to make our page look good and pleasant or help to show and exemplify what we write in it.
+
 ```HTML
-<img src="" alt="" />
-
-<!-- Display video file on our website. -->
-<video src="" controls></video>
-
-<!-- Display audio file on our website. -->
-<audio src="" controls></audio>
+<img src="nameImage-URL" alt="Text describing the image" />
 ```
 
-## _[Table label](/code/table.html)_
+There are certain attributes that have to do with the performance when loading images and through which we can adjust the way in which the images in the `<img>` tags are processed and downloaded.
+
+| Attribute     | Description                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------------- |
+| loading       | Indicates whether the browser should download the image immediately or postpone the download. |
+| decoding      | Indicates how and when the browser should process the images to display them.                 |
+| fetchpriority | Indicates the priority to be given to downloading the image resource.                         |
+
+### Video
+
+Display video file on our website.
+
+```HTML
+<video src="video.mp4" controls></video>
+```
+
+| Control attributes | Description                                                |
+| ------------------ | ---------------------------------------------------------- |
+| autoplay           | It starts playing the video automatically.                 |
+| loop               | Restart the video when it finishes playing (looping).      |
+| muted              | Sets the video to play with muted sound.                   |
+| controls           | Displays the playback controls (not displayed by default). |
+| playsinline        | Plays the video online, i.e. in your playback area.        |
+
+### Audio
+
+Display audio file on our website.
+
+```HTML
+<audio src="audio.mp3" controls></audio>
+```
+
+| Control attributes | Description                                                 |
+| ------------------ | ----------------------------------------------------------- |
+| loop               | Sets the audio to repeat at the end (loop mode).            |
+| muted              | Sets the audio to mute (muted).                             |
+| controls           | Displays the playback controls (not displayed by default).  |
+| autoplay           | Starts playing the audio automatically when the page loads. |
+
+## [Text labels](/code/text-labels.html)
+
+The main thing is to understand that it is not done for mere visual intention, but because it is intended to give it a semantic meaning.
+
+| Tags       | Its function                  |
+| ---------- | ----------------------------- |
+| `<a>`      | Create a link.                |
+| `<strong>` | Important text.               |
+| `<em>`     | Emphasized text.              |
+| `<mark>`   | Marked text.                  |
+| `<span>`   | Text excerpt.                 |
+| `<sup>`    | Superscript.                  |
+| `<sub>`    | Subindex                      |
+| `<cite>`   | Author name, work, book, etc. |
+| `<code>`   | Code fragment.                |
+
+## [Semantic labels](/code/semantic.html)
+
+We prepare our HTML document so that any browser, search engine robot, application or computer system will be able to read the HTML document and know perfectly the nature of the content of that section.
+
+| Tags        | Its function                                 |
+| ----------- | -------------------------------------------- |
+| `<h1>`      | Header level 1                               |
+| `<h2>`      | Header level 2                               |
+| `<h3>`      | Header level 3                               |
+| `<h4>`      | Header level 4                               |
+| `<h5>`      | Header level 5                               |
+| `<h6>`      | Header level 6                               |
+| `<header>`  | Header on a wed site or a section            |
+| `<nav>`     | Represents a navigation                      |
+| `<section>` | Represents a section of generic content      |
+| `<article>` | Self explanatory section                     |
+| `<footer>`  | footer of a website or a section             |
+| `<aside>`   | represents supplemental or secondary content |
+| `<address>` | represents a contact information             |
+
+## [Table label](/code/table.html)
 
 Tables have been included in HTML since its earliest versions and are a fantastic way to display data clearly.
 
@@ -199,7 +238,7 @@ Tables have been included in HTML since its earliest versions and are a fantasti
 </table>
 ```
 
-## [Form Label](/code/form-label.html)
+## [Form label](/code/form-label.html)
 
 A form is known as a mechanism for sending information by the user, through visual fields in a simple and intuitive way.
 
@@ -216,28 +255,57 @@ A form is known as a mechanism for sending information by the user, through visu
 </form>
 ```
 
-## _[Interactive](/code/interactive.html)_
+## [Form validations](/code/form-validations.html)
+
+HTML5 introduces new form attribute that allow form validation to be performed directly in HTML5, without the need for JavaScript.
+
+| attribute | Can act on...     | description                                                               |
+| --------- | ----------------- | ------------------------------------------------------------------------- |
+| maxlength | Text fields       | Does not allow to write texts longer than a certain number of characters. |
+| minlength | Text fields       | Sets the minimum text length required.                                    |
+| min       | Numeric fields    | Establishes the minimum number allowed.                                   |
+| max       | Numeric fields    | Establishes the maximum number allowed.                                   |
+| required  | Fields in general | Required field. It must be filled in to send the form.                    |
+| disable   | Fields in general | File deactivated. Cannot be modified. Not sent.                           |
+| readonly  | Fields in general | Read-only field. Cannot be modified. It is send.                          |
+
+## Scripting label
+
+The `<script>` tag allows us to indicate in our HTML that we are going to load a script (a text file with JavaScript code) and make it run on the current web document.
+
+- Inline script: The JS code is included in the HTML, within the tag itself.
+
+  ```HTML
+  <script>
+      alert("Hello world")
+  </script>
+  ```
+
+- External script: The JS code is included in the JavaScript file linked in the src attribute.
+
+  ```HTMl
+  <script src="file.js "></script>
+  ```
+
+| attributes | Its function                                                                                                                                                   |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Async      | Indicates that the script should be downloaded asynchronously and then executed as soon as it becomes available.                                               |
+| Defer      | Indicates that the script should be downloaded asynchronously and then executed once it has been fully downloaded and the HTML document has been fully parsed. |
 
 ```HTML
-<!-- Create dialog -->
-<dialog id="dialog-window">
-  <p>Hi, I am a message</p>
-  <img
-    src="https://cdn.pixabay.com/photo/2013/08/11/19/46/coffee-171653_960_720.jpg"
-    alt="Coffee"
-    width="300"
-  />
-  <!-- Use JavaScript, for replace onclick="" -->
-  <button id="close" onclick="document.getElementById('dialog-window').close()">
-    Close
-  </button>
-</dialog>
-<!-- Use JavaScript, for replace onclick="" -->
-<button id="show" onclick="document.getElementById('dialog-window').show()">
-  Show
-</button>
+<head>
+    <script src="script.js" async></script>
+    <script src="script.js" defer></script>
+</head>
+```
 
-<!-- Create Dropdown -->
+## [Interactive labels](/code/interactive.html)
+
+### Details
+
+The `<details>` tag gives us the possibility to create a drop-down element, which the user can expand or collapse to see more information that will be hidden.
+
+```HTML
 <details>
   <summary>Dropdown Title</summary>
   <p>More Info</p>
@@ -245,34 +313,19 @@ A form is known as a mechanism for sending information by the user, through visu
 </details>
 ```
 
-## _[Semantic](/code/semantic.html)_
+### Dialog
 
-We prepare our HTML document so that any browser, search engine robot, application or computer system will be able to read the HTML document and know perfectly the nature of the content of that section.
+As of HTML5.1, a `<dialog>` tag is incorporated by means of which we can build our own customized dialog windows.
 
 ```HTML
-<h1>Header level 1</h1>
-
-<h2>Header level 2</h2>
-
-<h3>Header level 3</h3>
-
-<h4>Header level 4</h4>
-
-<h5>Header level 5</h5>
-
-<h6>Header level 6</h6>
-
-<header>header tag -> Header on a wed site or a section</header>
-
-<nav>nav tag -> Represents a navigation</nav>
-
-<section>section tag -> Represents a section of generic content</section>
-
-<article>article tag -> Self explanatory section</article>
-
-<footer>footer tag -> footer of a website or a section</footer>
-
-<aside>aside tag -> represents supplemental or secondary content</aside>
-
-<address>address tag -> represents a contact information</address>
+<dialog id="dialog-window">
+  <p>Hi, I am a message</p>
+  <img src="" alt="" />
+  <button id="close" onclick="document.getElementById('dialog-window').close()">
+    Close
+  </button>
+</dialog>
+<button id="show" onclick="document.getElementById('dialog-window').show()">
+  Show
+</button>
 ```
